@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    background: rgb(0, 192, 0);
+    color: rgb(255, 255, 255)
+}
+.game-header {
+    background: rgb(0, 39, 0);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 15rem;
+}
+
+.dice-panel {
+    background: rgb(4, 110, 0);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 0 28rem
+}
+
+.player-card {
+    background: rgb(2, 63, 0);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 0 25rem
+}
+
+.player-image {
+    width: 5rem;
+}
