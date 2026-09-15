@@ -2,6 +2,7 @@
     <head>
         <title>Trivial pursuit peli</title>
         <link rel="stylesheet" href="styles.css">
+        <script scr="game.js"></script>
     </head>
     <body>
         <header class="game-header">
@@ -9,7 +10,7 @@
             <p>Kerää kaikki kategoriat</p>
         </header>
 
-        <section>
+        <section class="status-panel">
             <article class="player-card">
                 <h2>Player</h2>
                 <img src="good.png" class="player-image">
@@ -17,10 +18,13 @@
             </article>
 
             <article class="dice-panel">
-            <p>In Turn:</p>
-            <h2>Player</h2>
-            <button>Roll The Dice</button>
+                <p>In Turn:</p>
+                <h2>Player</h2>
+                <button>Roll The Dice</button>
+
+                <div id="board" class="board">Pelilauta</div>
             </article>
+
 
             <article class="player-card">
                 <h2>Opponent</h2>

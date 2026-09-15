@@ -3,25 +3,38 @@ body {
     background: rgb(0, 192, 0);
     color: rgb(255, 255, 255)
 }
+
+.status-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.board {
+    background: rgb(37, 134, 134);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
 .game-header {
     background: rgb(0, 39, 0);
     border-radius: 1rem;
     padding: 1rem;
-    margin: 0 15rem;
+    margin: 0 10rem;
 }
 
 .dice-panel {
     background: rgb(4, 110, 0);
-    border-radius: .5rem;
+    border-radius: 1rem;
     padding: 1rem;
-    margin: 0 28rem
 }
 
 .player-card {
     background: rgb(2, 63, 0);
-    border-radius: .5rem;
+    border-radius: 10rem;
     padding: 1rem;
-    margin: 0 25rem
 }
 
 .player-image {
