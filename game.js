@@ -7,9 +7,26 @@ const CATEGORIES = [
     { id: "urheilu", name: "Urheilu" }
 ];
 
+const gameState = {
+    player: {
+        name: "Player",
+        position: 0,
+        collectedCategories: new Set()
+    },
+    computer: {
+        name: "Opponent",
+        position: 0,
+        collectedCategories: new Set()
+    },
+    currentTurn: "player"
+};
 
 const BOARD_SIZE = 18;
 const boardElement = document.querySelector("#board");
+const rollButtonElement = document.querySelector("#roll-button");
+const diceBoxElement = document.querySelector("#dice-box");
+
+rollButtonElement.addEventListener("click", RollDice);
 CreateBoard();
 
 function CreateBoardCoodrinates() {
@@ -53,4 +70,10 @@ function CreateBoard() {
 
         boardElement.append(newSpace);
     }
+}
+
+function RollDice() {
+    var diceResult = Math.floor(Math.random() * 6) + 1; // Väli: 1-6
+
+    diceBoxElement.textContent = diceResult;
 }
